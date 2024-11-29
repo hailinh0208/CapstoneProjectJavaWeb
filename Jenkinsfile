@@ -6,7 +6,7 @@ pipeline {
     environment {
         // Set Maven and Java paths explicitly
         MAVEN_HOME = "/usr/bin/mvn"
-        JAVA_HOME = "/usr/bin/java"
+        JAVA_HOME = "/usr/lib/jvm/java-17-openjdk-amd64"
         PATH = "${MAVEN_HOME}:${JAVA_HOME}:${env.PATH}"
     }
 
