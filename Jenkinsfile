@@ -30,8 +30,7 @@ pipeline {
         stage('Build Application') {
             steps {
                 echo 'Building the application with Maven...'
-                sh 'cd /home/ubuntu/CapstoneProjectJavaWeb/starter_code'
-                sh 'mvn clean package'
+                sh 'cd /home/ubuntu/CapstoneProjectJavaWeb/starter_code && mvn clean package'
             }
         }
 
